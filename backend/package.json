@@ -1,0 +1,24 @@
+{
+  "name": "kiroku-backend",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "anime",
+    "library"
+  ],
+  "homepage": "https://github.com/hrnns-ti/kiroku#readme",
+  "bugs": {
+    "url": "https://github.com/hrnns-ti/kiroku/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hrnns-ti/kiroku.git"
+  },
+  "license": "ISC",
+  "author": "Haerunnas",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
