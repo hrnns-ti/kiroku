@@ -59,7 +59,7 @@ async function deleteAnime(req, res) {
   try {
     const data = await anime.deleteAnime(id);
 
-    if (affectedRows === 0) {
+    if (data === 0) {
       return res.status(404).json({
         status: false,
         message: `Anime dengan ID ${id} tidak ditemukan di database`
@@ -93,7 +93,7 @@ async function updateAnime(req, res) {
   try {
     const data = await anime.updateAnime(id, status, episodes_watched)
     
-    if (affectedRows === 0) {
+    if (data === 0) {
       return res.status(404).json({
           status: false,
           message: `Anime dengan ID ${id} tidak ditemukan di Kiroku.`

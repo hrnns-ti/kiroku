@@ -3,8 +3,8 @@ const router = express.Router()
 
 const anime = require('../controllers/anime.controller')
 
-router.get('/all', anime.getAllAnime)
-router.post('/add', anime.addAnime)
+router.get('/', anime.getAllAnime)
+router.post('/', anime.addAnime)
 router.delete('/:id', anime.deleteAnime)
 router.patch('/:id', anime.updateAnime)
 

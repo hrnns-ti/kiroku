@@ -19,7 +19,7 @@ app.get('/api', (req, res) => {
   }
 })
 
-app.use('/api/anime', animeRouter)
+app.use('/api/animes', animeRouter)
 app.use('/api/collections', collectionRouter)
 
 app.listen(port, () => {
