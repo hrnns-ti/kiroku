@@ -9,7 +9,7 @@ const getAll = async () => {
 const addAnime = async (animeData) => {
     const sql = 'INSERT INTO animes (jikan_id, title, image_url, synopsis, score, year, total_episodes, status) VALUES (?, ?, ?, ?, ?, ?, ?, ?)'
     const values = [
-        animeData.jikan_id,
+        animeData.anime_id,
         animeData.title,
         animeData.image_url,
         animeData.synopsis || null,

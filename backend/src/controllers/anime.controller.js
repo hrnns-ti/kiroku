@@ -20,10 +20,10 @@ async function getAllAnime(req, res) {
 async function addAnime(req, res) {
   const animeData = req.body
   console.log(req.body)
-  if (!animeData.jikan_id || !animeData.title) {
+  if (!animeData.anime_id || !animeData.title) {
     return res.status(400).json({
       status: false,
-      message: 'jikan_id dan title wajib diisi!'
+      message: 'anime_id dan title wajib diisi!'
     });
   }
 
@@ -34,7 +34,7 @@ async function addAnime(req, res) {
       message: 'Anime berhasil ditambahkan ke Kiroku!',
       data: {
         id: newAnimeId,
-        jikan_id: animeData.jikan_id,
+        anime_id: animeData.anime_id,
         title: animeData.title,
       },
     });
