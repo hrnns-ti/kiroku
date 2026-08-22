@@ -3,6 +3,7 @@ import { Barlow } from "next/font/google";
 import "./globals.css";
 
 import Navbar from "@/components/ui/Navbar";
+import Search from "@/components/ui/Search";
 
 const barlow = Barlow({
   weight: ["400", "500", "600", "700"],
@@ -22,6 +23,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${barlow.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <Search/>
         <Navbar/>
         {children}
       </body>
